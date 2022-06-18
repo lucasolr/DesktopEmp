@@ -12,7 +12,7 @@ object Form1: TForm1
   object RectFundo: TRectangle
     Align = Left
     Fill.Color = xFF043F61
-    Size.Width = 380.000000000000000000
+    Size.Width = 289.000000000000000000
     Size.Height = 720.000000000000000000
     Size.PlatformDefault = False
     object Logo: TImage
@@ -2627,19 +2627,19 @@ object Form1: TForm1
             FF634C50A075D8F1FF0000000049454E44AE426082}
           FileName = 'C:\Hub\AllLogo\Branco\Completo\All Delivery Branco.png'
         end>
-      Position.X = 153.000000000000000000
-      Position.Y = 160.000000000000000000
+      Position.X = 73.000000000000000000
+      Position.Y = 56.000000000000000000
       Size.Width = 128.000000000000000000
       Size.Height = 121.000000000000000000
       Size.PlatformDefault = False
     end
   end
   object RectLogin: TRectangle
-    Anchors = [akLeft, akTop, akRight, akBottom]
+    Anchors = [akTop, akBottom]
     Fill.Color = claWhite
     Position.X = 392.000000000000000000
     Position.Y = 120.000000000000000000
-    Size.Width = 609.000000000000000000
+    Size.Width = 433.000000000000000000
     Size.Height = 500.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
@@ -2659,7 +2659,7 @@ object Form1: TForm1
       Padding.Right = 10.000000000000000000
       Padding.Bottom = 10.000000000000000000
       Margins.Top = 5.000000000000000000
-      Size.Width = 609.000000000000000000
+      Size.Width = 433.000000000000000000
       Size.Height = 495.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
@@ -2669,7 +2669,7 @@ object Form1: TForm1
         Margins.Top = 10.000000000000000000
         Position.X = 10.000000000000000000
         Position.Y = 20.000000000000000000
-        Size.Width = 589.000000000000000000
+        Size.Width = 413.000000000000000000
         Size.Height = 37.000000000000000000
         Size.PlatformDefault = False
         TextSettings.Font.Family = 'Arial'
@@ -2677,6 +2677,48 @@ object Form1: TForm1
         TextSettings.HorzAlign = Center
         Text = 'Login'
         TabOrder = 0
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'editpadrao'
+        TabOrder = 2
+        Position.X = 88.000000000000000000
+        Position.Y = 160.000000000000000000
+        Size.Width = 241.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        object Label1: TLabel
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 1.000000000000000000
+          Position.Y = -24.000000000000000000
+          Size.Width = 85.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 13.000000000000000000
+          Text = 'CNPJ'
+          TabOrder = 0
+        end
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'editpadrao'
+        TabOrder = 1
+        Position.X = 88.000000000000000000
+        Position.Y = 248.000000000000000000
+        Size.Width = 241.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        object LabelSenha: TLabel
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 1.000000000000000000
+          Position.Y = -24.000000000000000000
+          Size.Width = 85.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 13.000000000000000000
+          Text = 'Senha'
+          TabOrder = 0
+        end
       end
     end
   end
