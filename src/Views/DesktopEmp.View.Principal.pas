@@ -9,22 +9,37 @@ uses
   FMX.StdCtrls;
 
 type
-  TForm3 = class(TForm)
+  TPrincipal = class(TForm)
     Rectangle1: TRectangle;
     ListBox1: TListBox;
     ListBoxHome: TListBoxItem;
-    Image1: TImage;
+    ImageHome: TImage;
     LabelHome: TLabel;
     ListBoxLogo: TListBoxItem;
     Circle1: TCircle;
     ListBoxPedidos: TListBoxItem;
-    Image2: TImage;
-    Label1: TLabel;
+    ImagePedidos: TImage;
+    LabelPedidos: TLabel;
     ListBoxConfigurações: TListBoxItem;
-    Image3: TImage;
+    ImageConfig: TImage;
     LabelConfig: TLabel;
     LabelLoja: TLabel;
     CornerButtonEditar: TCornerButton;
+    ListBoxProdutos: TListBoxItem;
+    ImageProdutos: TImage;
+    LabelProdutos: TLabel;
+    ListBoxGrupoProdutos: TListBoxItem;
+    ImageGrupoProduto: TImage;
+    LabelGrupoProdutos: TLabel;
+    ListBoxSubGrupo: TListBoxItem;
+    ImageSubGrupos: TImage;
+    LabelSubProdutos: TLabel;
+    ListBoxDashboard: TListBoxItem;
+    ImageDashboard: TImage;
+    LabelDashboard: TLabel;
+    ListBoxRelatorio: TListBoxItem;
+    ImageRelatorio: TImage;
+    LabelRelatorio: TLabel;
   private
     { Private declarations }
   public
@@ -32,7 +47,7 @@ type
   end;
 
 var
-  Form3: TForm3;
+  Principal: TPrincipal;
 
 implementation
 
