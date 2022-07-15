@@ -204,7 +204,7 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Views\DesktopEmp.View.Principal.pas">
-            <Form>Form3</Form>
+            <Form>Principal</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
