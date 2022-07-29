@@ -1,4 +1,4 @@
-unit DesktopEmp.View.Base;
+unit s;
 
 interface
 
@@ -7,7 +7,8 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs;
 
 type
-  TViewBase = class(TForm)
+  TForm2 = class(TForm)
+    StyleBook1: TStyleBook;
   private
     { Private declarations }
   public
@@ -15,7 +16,7 @@ type
   end;
 
 var
-  ViewBase: TViewBase;
+  Form2: TForm2;
 
 implementation
 

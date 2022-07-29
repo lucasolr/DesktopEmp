@@ -1,4 +1,4 @@
-object ViewBase: TViewBase
+object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
@@ -8,4 +8,11 @@ object ViewBase: TViewBase
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end>
+    Left = 304
+    Top = 224
+  end
 end

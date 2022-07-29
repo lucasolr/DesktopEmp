@@ -195,16 +195,20 @@
             <Form>Form1</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="Views\DesktopEmp.View.Base.pas">
-            <Form>Form2</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
         <DCCReference Include="infra\Infra.Styles.pas">
             <Form>InfraStyles</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Views\DesktopEmp.View.Principal.pas">
             <Form>Principal</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Views\DesktopEmp.View.Produtos.pas">
+            <Form>Form3</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Views\DesktopEmp.View.Base.pas">
+            <Form>Form2</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

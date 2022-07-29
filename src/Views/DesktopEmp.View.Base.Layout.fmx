@@ -1,0 +1,11 @@
+inherited ViewBaseLayout: TViewBaseLayout
+  Caption = 'ViewBase1'
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Contents
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

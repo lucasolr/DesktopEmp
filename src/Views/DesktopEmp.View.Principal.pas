@@ -6,10 +6,10 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
   FMX.ListBox, FMX.Objects, FMX.ExtCtrls, FMX.Controls.Presentation,
-  FMX.StdCtrls;
+  FMX.StdCtrls, Router4D, DesktopEmp.View.Produtos;
 
 type
-  TPrincipal = class(TForm)
+  TViewPrincipal = class(TForm)
     Rectangle1: TRectangle;
     ListBox1: TListBox;
     ListBoxHome: TListBoxItem;
@@ -40,6 +40,8 @@ type
     ListBoxRelatorio: TListBoxItem;
     ImageRelatorio: TImage;
     LabelRelatorio: TLabel;
+    LayoutForms: TLayout;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,10 +49,16 @@ type
   end;
 
 var
-  Principal: TPrincipal;
+  ViewPrincipal: TViewPrincipal;
 
 implementation
 
 {$R *.fmx}
+
+procedure TViewPrincipal.FormCreate(Sender: TObject);
+begin
+  TRouter4D.Switch.Router('Inicio', TViewProdutos);
+  TRouter4D.Render<TViewProdutos>.SetElement(LayoutForms, LayoutForms);
+end;
 
 end.

@@ -3,14 +3,13 @@ unit DesktopEmp.View.Produtos;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.Edit, FMX.Objects;
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  DesktopEmp.View.Base.Layout, FMX.Layouts, FMX.Controls.Presentation, FMX.Edit;
 
 type
-  TForm3 = class(TForm)
+  TViewProdutos = class(TViewBaseLayout)
     Edit1: TEdit;
-    Image1: TImage;
   private
     { Private declarations }
   public
@@ -18,7 +17,7 @@ type
   end;
 
 var
-  Form3: TForm3;
+  ViewProdutos: TViewProdutos;
 
 implementation
 
