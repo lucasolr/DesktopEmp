@@ -5,18 +5,20 @@ uses
   FMX.Forms,
   DestopEmp.View.Login in 'Views\DestopEmp.View.Login.pas' {Form1},
   Infra.Styles in 'infra\Infra.Styles.pas' {InfraStyles},
-  DesktopEmp.View.Principal in 'Views\DesktopEmp.View.Principal.pas' {Principal},
-  DesktopEmp.View.Produtos in 'Views\DesktopEmp.View.Produtos.pas' {Form3},
-  DesktopEmp.View.Base in 'Views\DesktopEmp.View.Base.pas' {Form2};
+  DesktopEmp.View.Principal in 'Views\DesktopEmp.View.Principal.pas' {ViewPrincipal},
+  DesktopEmp.View.Base in 'Views\DesktopEmp.View.Base.pas' {ViewBase},
+  DesktopEmp.View.Base.Layout in 'Views\DesktopEmp.View.Base.Layout.pas' {ViewBaseLayout},
+  DesktopEmp.View.Produtos in 'Views\DesktopEmp.View.Produtos.pas' {ViewProdutos};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TPrincipal, Principal);
+  Application.CreateForm(TViewPrincipal, ViewPrincipal);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TInfraStyles, InfraStyles);
-  Application.CreateForm(TForm3, Form3);
-  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TViewBase, ViewBase);
+  Application.CreateForm(TViewBaseLayout, ViewBaseLayout);
+  Application.CreateForm(TViewProdutos, ViewProdutos);
   Application.Run;
 end.
